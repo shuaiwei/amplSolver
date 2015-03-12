@@ -1,0 +1,11 @@
+The way to do that is :
+1) Find the first element b of the entering node set EN.
+2) In original arc set A, replace all the same element in A with EN by b; such as replacing 
+   arc (a,c) and (e,d) with (a,b) and (b,d) if c and d are the same elements, respectively.
+3) delete the arc having the same start and end point, namely delete (e,e);
+5) In the origal node set, delete all elements that are same to these in entering set EN 
+    except b.
+4) Put the new generated A and N into algorithm;
+5) Do the totally same things to the exiting node set EX.
+6) Then, by just changing the arc and node sets in new algorithm, we can get the max flow from 
+   one subset to another.

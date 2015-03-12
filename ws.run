@@ -1,0 +1,12 @@
+#run commands: ./ampl; include run.ws;
+# libgurobi56.so must be put in the same directory with ampl;
+
+model wei6_problem_15_4_c.mod
+#option solver "/Users/88wuji/Documents/amplSolver/lpsolve";
+option solver "/Users/88wuji/Documents/amplSolver/cplex";
+#option solver "/Users/88wuji/Documents/amplSolver/solver/gurobi";
+#option solver "/Users/88wuji/Documents/amplSolver/xpress";
+
+data wei6_problem_15_4_c.dat;
+solve 
+#display XB,XC;
